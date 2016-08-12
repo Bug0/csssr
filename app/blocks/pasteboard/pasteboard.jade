@@ -1,5 +1,15 @@
-include ../icon/icon
+include ../title/title
+include ../avatar/avatar
+include ../initials/initials
+include ../signature/signature
+include ../links/links
+include ../contacts/contacts
 
 mixin pasteboard()
 	+b.pasteboard&attributes(attributes)
-		+icon('logo', true).logo
+		+avatar()
+		+title()
+		+initials()
+		+signature()
+		+links()
+		+contacts()
