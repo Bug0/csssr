@@ -42,3 +42,12 @@ retinaBackground($image, $ext = 'png') {
 		background-image url('../images/' + $image + '@2x.' + $ext)
 	}
 }
+//Set position center screen
+center($width, $height)
+	width $width
+	height $height
+	position absolute
+	left 50%
+	top 50%
+	margin-left (- $width/2)
+	margin-top (- $height/2)

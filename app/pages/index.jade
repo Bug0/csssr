@@ -1,6 +1,9 @@
 extends /blocks/layout-default/layout-default
 
+include /blocks/pasteboard/pasteboard
+
 block head
 	- var pageTitle = 'CSSSR Project Template';
 
 block content
+	+pasteboard
