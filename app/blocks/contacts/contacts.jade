@@ -1,10 +1,12 @@
 mixin contacts()
 	+b.contacts&attributes(attributes)
-		+e('span').title
-			|e-mail:
-		+e('a').field(href='mailto:bug0@bugzero.su')
-			|bug0@bugzero.su
-		+e('span').title
-			| tel:
-		+e('a').field(href='tel:+7123456789')
-			| +7 (123) 234-24-23
+		+e.item
+			+e('span').title
+				|e-mail:
+			+e('a').field(href='mailto:bug0@bugzero.su')
+				|bug0@bugzero.su
+		+e.item
+			+e('span').title
+				| tel:
+			+e('a').field(href='tel:+7123456789')
+				| +7 (123) 234-24-23
