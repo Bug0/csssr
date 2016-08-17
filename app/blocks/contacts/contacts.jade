@@ -1,12 +1,20 @@
 mixin contacts()
 	+b.contacts&attributes(attributes)
 		+e.item
+		
 			+e('span').title
-				|e-mail:
+				|E-mail:
 			+e('a').field(href='mailto:bug0@bugzero.su')
 				|bug0@bugzero.su
+		
 		+e.item
 			+e('span').title
-				| tel:
-			+e('a').field(href='tel:+7123456789')
-				| +7 (123) 234-24-23
+				| Tel:
+			+e('a').field(href='tel:+79264994547')
+				| +7 (926) 499-45-47
+				
+		+e.item
+			+e('a').title
+				|Skype:
+			+e('a').field(href='skype:nikita.shevchenko.it')
+				|Nikita.Shevchenko.IT
