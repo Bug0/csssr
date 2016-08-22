@@ -1,11 +1,29 @@
 include /../node_modules/bemto.jade/bemto
 include /../node_modules/jade-injected/jade-injected
 include ../page/page
+include ../header/header
+include ../main-wraper/main-wraper
+include ../dialog/dialog
+include ../pasteboard/pasteboard
+include ../footer/footer
 include ../scripts/scripts
 
 doctype html
 html(lang='ru')
 	include ../head/head
+	
 	+page
-		block content
+		
+		+main-wraper
+		
+			+header
+			
+			block content
+			
+			+dialog(id='dialog')
+			
+				+pasteboard()
+				
+			+footer
+			
 		+scripts(['app.min.js'])

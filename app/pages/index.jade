@@ -1,9 +1,8 @@
 extends /blocks/layout-default/layout-default
-
-include /blocks/pasteboard/pasteboard
+include /blocks/performance/performance
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
 
 block content
-	+pasteboard
+	+performance(getData('portfolio'))
