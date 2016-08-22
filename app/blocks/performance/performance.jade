@@ -1,0 +1,7 @@
+mixin performance(performance)
+	+b('section').performance&attributes(attributes)
+		
+		each item in performance
+			+e('a').item(href='#{ item[0] }')
+			
+				+e('img').img(src='#{ item[1] }' title='#{ item[2] }')
