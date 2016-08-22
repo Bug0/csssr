@@ -1,0 +1,10 @@
+include ../navigation/navigation
+
+mixin title()
+	+b('section').title&attributes(attributes)
+		+navigation
+		+e.logo
+		+e('h1').item
+			+e('span')
+				|Jwood
+			|photography
