@@ -2,14 +2,14 @@ include ../title/title
 include ../avatar/avatar
 include ../initials/initials
 include ../signature/signature
-include ../links/links
 include ../contacts/contacts
 
 mixin pasteboard()
 	+b.pasteboard&attributes(attributes)
+		+e('a').close(href='#close' title='Закрыть')
+			|X
 		+avatar()
 		+title()
 		+initials()
 		+signature()
-		+links()
 		+contacts()
