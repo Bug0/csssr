@@ -1,4 +1,6 @@
 mixin scroll(text, link)
 	+b.scroll&attributes(attributes)
 		+e('a').item(href='#{ link }')
-			|#{ text }
+			|#{ text } 
+			|<br>
+			+e('img').icon
