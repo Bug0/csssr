@@ -1,0 +1,19 @@
+include ../navigation/navigation
+include ../heading/heading
+include ../content/content
+include ../showcase/showcase
+include ../scroll/scroll
+
+mixin portfolio()
+	+b.portfolio&attributes(attributes)
+		
+		+navigation
+		
+		+heading._portfolio
+			|Portfolio
+			
+		+content
+			
+			+showcase(getData('showcase'))
+			
+		+scroll('do you want to see it with your own eyes? Scroll!', '#contacts')
