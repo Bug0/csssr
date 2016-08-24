@@ -1,26 +1,29 @@
 include ../navigation/navigation
+include ../content/content
+include ../heading/heading
+include ../text/text
 include ../scroll/scroll
 
 mixin aboutme()
 	+b.aboutme&attributes(attributes)
 		+navigation
 		
-		+e('section').content
+		+content
 			
 			+e('img').img(src='assets/images/aboutme-photo.jpg')
 			
-			+e.wraper
+			.aboutme__group
 				
-				+e('h2').title
+				+heading
 					|About Me
-				
-				+e('p').text
+			
+				+text
 					|Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 					|incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
 					|exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				
-				+e('p').text
+			
+				+text
 					|Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 					|fugiat nulla pariatur. 
-		
+			
 		+scroll('keep scrolling, there is still more to come', '#portfolio')
