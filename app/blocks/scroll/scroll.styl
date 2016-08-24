@@ -1,8 +1,10 @@
 .scroll
 	text-align center
+	color rgb(241,241,241)
 	
 	&__item
-		color rgb(241,241,241)
+		font-family NexaBold
+		color inherit
 		font-size 18px
 		text-decoration none
 		text-transform uppercase
@@ -10,3 +12,9 @@
 	&__icon
 		margin 23px auto 53px auto
 		sprite $scroll
+		
+	&_grey
+		color rgb(190,190,190)
+		
+		.scroll__item .scroll__icon
+			sprite $scrollgrey

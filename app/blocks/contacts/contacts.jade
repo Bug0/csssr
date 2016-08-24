@@ -1,0 +1,11 @@
+include ../navigation/navigation
+include ../communications/communications
+include ../social/social
+
+mixin contacts()
+	+b.contacts&attributes(attributes)
+		+navigation._grey
+		
+		.contacts__group
+			+communications
+			+social

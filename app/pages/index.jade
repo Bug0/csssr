@@ -1,6 +1,8 @@
 extends /blocks/layout-default/layout-default
 include /blocks/home/home
 include /blocks/aboutme/aboutme
+include /blocks/portfolio/portfolio
+include /blocks/contacts/contacts
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
@@ -8,3 +10,5 @@ block head
 block content
 	+home(id='home')
 	+aboutme(id='aboutme')
+	+portfolio(id='portfolio')
+	+contacts(id='contacts')

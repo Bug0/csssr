@@ -6,7 +6,7 @@ include ../scroll/scroll
 
 mixin aboutme()
 	+b.aboutme&attributes(attributes)
-		+navigation
+		+navigation._grey
 		
 		+content
 			
@@ -26,4 +26,4 @@ mixin aboutme()
 					|Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 					|fugiat nulla pariatur. 
 			
-		+scroll('keep scrolling, there is still more to come', '#portfolio')
+		+scroll('keep scrolling, there is still more to come', '#portfolio')._grey
