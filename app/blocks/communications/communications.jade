@@ -1,0 +1,11 @@
+mixin communications()
+	+b.communications&attributes(attributes)
+		+e('span').title
+			|Mail:
+		+e('a').field(href='mailto:jason@wood.com')
+			|jason@wood.com
+		
+		+e('span').title
+			|Phone:
+		+e('a').field(href='tel:+44212432444')
+			|+44 212 432 444
