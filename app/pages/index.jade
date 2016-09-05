@@ -1,8 +1,12 @@
 extends /blocks/layout-default/layout-default
-include /blocks/performance/performance
+include /blocks/aboutme/aboutme
+//include /blocks/performance/performance
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Верстка Web';
+	- var pageDescription = 'Сайт портфолио вертки';
+	- var pageKeywords = 'Портфоли, Portfolio, Web, HTML, HTML5, CSS, JavaScript, JS, Верстка, Адаптивная верстка, Сайт, Создание сайта';
 
 block content
-	+performance(getData('portfolio'))
+	+aboutme()
+	//+performance(getData('portfolio'))
