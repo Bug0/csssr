@@ -11,19 +11,17 @@ include ../scripts/scripts
 doctype html
 html(lang='ru')
 	include ../head/head
-	
+
 	+page
-		
+
 		+main-wraper
-		
+
 			+header
-			
+
 			block content
-			
-			+dialog(id='dialog')
-			
-				+pasteboard()
-				
+
+			+dialog(id='contacts')
+
 			+footer
-			
+
 		+scripts(['app.min.js'])
