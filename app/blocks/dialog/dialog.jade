@@ -1,3 +1,5 @@
+include ../pasteboard/pasteboard
+
 mixin dialog()
 	+b.dialog&attributes(attributes)
-		block
+		+pasteboard()
